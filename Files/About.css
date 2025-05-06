@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    background-color: rgb(55,90,4);
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-bar {
+    padding: 20px 50px;
+    color: white;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .language-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .lang-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(55,90,4);
+    cursor: pointer;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  .nav-buttons a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgb(240, 240, 240); /* Light grey background */;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgb(55,90,4);
+    color: white;
+    padding: 10sspx 50px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(55,90,4);
+    padding: 5px 0;
+    gap: 30px;
+  }
+  
+  .nav-buttons a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-buttons a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Language selector (top-right corner) */
+  .language-selector {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .language-selector select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .about-area {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about-area h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .about-area h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .about-area p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Feedback Form styling */
+  .feedback-form {
+    margin-top: 30px;
+    text-align: left; /* Keep form labels aligned nicely */
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .feedback-form textarea {
+    resize: vertical;
+  }
+  
+  /* Button styling - same as other buttons */
+  .feedback-form button {
+    background-color: rgb(55, 90, 4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: rgb(45, 75, 3);
+  }
+  
+  /* Optional: spacing under footer */
+  footer {
+    margin-top: 50px;
+  }
