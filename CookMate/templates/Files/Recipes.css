@@ -142,8 +142,8 @@ body {
   
   .recipe-box {
     background-color: white;
-    width: 300px;
-    height: 300px; /* Adjusted height to fit image, title, and button */
+    width: 280px;
+    height: 280px; /* Adjusted height to fit image, title, and button */
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     text-align: center;
     font-weight: bold;
@@ -159,7 +159,7 @@ body {
     width: 100%;
     height: 200px; /* Set a fixed height for images */
     object-fit: cover; /* Ensure the image covers the area without stretching */
-    border-radius: 10px; /* Rounding the corners of the image */
+    border-radius: 25px; /* Rounding the corners of the image */
   }
   
   .recipe-box h3 {
