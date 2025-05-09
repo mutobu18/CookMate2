@@ -1,0 +1,116 @@
+/* ===== RESET & GLOBAL ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.container {
+  width: min(90%, 1100px);
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+/* ===== HEADER ===== */
+.top-bar {
+  background-color: #375a04;
+  color: #fff;
+  padding-block: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+
+
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Main content styling */
+.recipe-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.recipe-detail h2 {
+  text-align: center;
+  color: #4CAF50; /* Same fresh color for headings */
+  font-size: 2rem;
+}
+
+.recipe-detail img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Lists styling */
+.ingredients-list,
+.steps-list {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.ingredients-list li,
+.steps-list li {
+  margin-bottom: 8px;
+}
+
+/* Section titles */
+.recipe-detail h3 {
+  color: #4CAF50;
+  margin-top: 30px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+/* Video styling */
+video {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Back button */
+.back-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  color: #555;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}

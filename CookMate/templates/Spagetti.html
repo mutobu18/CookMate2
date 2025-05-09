@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Spagetti Bolognes</title>
-  <link rel="stylesheet" href="Fresh.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Fresh.css') }}">
 </head>
 <body>
 
@@ -13,8 +13,8 @@
 
 <main class="recipe-detail">
   <h2>Spagetti Bolognes</h2>
+  <img src="{{ url_for('static', filename='Images/spagetti.jpg') }}" alt="recipe2">
 
-  <img src="../Images/spagetti.jpg" alt="Grilled Chicken" class="recipe1">
   <h3>Ingredients</h3>
 <ul class="ingredients-list">
   <li>200g spaghetti</li>

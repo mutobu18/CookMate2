@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>CookMate - Fresh Salade</title>
-  <link rel="stylesheet" href="Fresh.css">
-</head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='Css/Fresh.css') }}">
+  </head>
 <body>
 
 <!-- === HEADER === -->
@@ -28,7 +28,7 @@
   <!-- LEFT SIDE -->
   <div class="left-side">
     <h2>Fresh Salade</h2>
-    <img src="../Images/recipe1.jpg" alt="Fresh Salade" class="recipe-image">
+    <img src="{{ url_for('static', filename='Images/recipe1.jpg') }}" alt="recipe2">
 
     <section class="instructions">
       <h3>Steps to Follow</h3>

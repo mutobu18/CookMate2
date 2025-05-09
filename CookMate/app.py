@@ -47,6 +47,30 @@ def create_account():
             return render_template('create_account.html', error="Passwords do not match.")
     return render_template('create_account.html')
 
+@app.route('/freshsalade')
+def freshsalade():
+    return render_template('Freshsalade.html')
+
+@app.route('/burger')
+def burger():
+    return render_template('Burger.html')
+
+@app.route('/cookies')
+def cookies():
+    return render_template('Cookies.html')
+
+@app.route('/chiken')
+def chiken():
+    return render_template('Chiken_grilled.html')
+
+@app.route('/veg')
+def veg():
+    return render_template('Veg.html')
+
+@app.route('/spagetti')
+def spagetti():
+    return render_template('Spagetti.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

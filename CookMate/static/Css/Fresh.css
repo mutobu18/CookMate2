@@ -1,0 +1,169 @@
+/* ===== RESET & GLOBAL ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.container {
+  width: min(90%, 1100px);
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+/* ===== HEADER ===== */
+.top-bar {
+  background-color: #375a04;
+  color: #fff;
+  padding-block: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.lang-button {
+  padding: 0.4rem 0.9rem;
+  background-color: #fff;
+  color: #ff7043;
+  border: 2px solid #ff7043;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+}
+
+.lang-button:hover {
+  background-color: #ff7043;
+  color: #fff;
+}
+
+/* ===== NAV BUTTON ===== */
+.nav-buttons {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.back-button {
+  padding: 0.5rem 1.2rem;
+  background-color: #ff7043;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e35e33;
+}
+
+/* ===== RECIPE TITLE ===== */
+.recipe-title {
+  text-align: center;
+  color: #ff7043;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== MAIN RECIPE CONTAINER ===== */
+.recipe-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  width: min(90%, 1200px);
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== LEFT SIDE ===== */
+.left-side h2 {
+  font-size: 2.2rem;
+  color: #375a04;
+  margin-bottom: 1rem;
+}
+
+.left-side img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.instructions h3 {
+  font-size: 1.5rem;
+  color: #ff7043;
+  margin-bottom: 0.75rem;
+}
+
+.instructions ol {
+  padding-left: 1.2rem;
+  list-style-type: decimal;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== RIGHT SIDE ===== */
+.ingredients h3,
+.video h3 {
+  font-size: 1.5rem;
+  color: #ff7043;
+  margin-bottom: 0.75rem;
+}
+
+.ingredients ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.ingredients li {
+  margin-bottom: 0.5rem;
+}
+
+.video video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #375a04;
+  color: #fff;
+  margin-top: 2rem;
+  border-top: 4px solid #ff7043;
+}

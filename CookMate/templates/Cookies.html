@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Chocolate chips cookies</title>
-  <link rel="stylesheet" href="Fresh.css">
-</head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Fresh.css') }}">
+  </head>
 <body>
 
 <header class="top-bar">
@@ -13,8 +13,7 @@
 
 <main class="recipe-detail">
   <h2>Chocolate Chips cookies</h2>
-
-  <img src="../Images/cookies.jpg" alt="Grilled Chicken" class="recipe1">
+  <img src="{{ url_for('static', filename='Images/cookies.jpg') }}" alt="recipe2">
 
   <h3>Ingredients</h3>
 <ul class="ingredients-list">

@@ -35,31 +35,30 @@
     <div class="recipe-box">
       <img src="{{ url_for('static', filename='Images/recipe1.jpg') }}" alt="recipe2">
         <h3>Fresh Salade</h3>
-        <button class="see-recipe" data-url="Freshsalade.html">See Recipe</button>
+        <button class="see-recipe" data-url="{{ url_for('freshsalade') }}">See Recipe</button>
       </div>
 
       <div class="recipe-box">
       <img src="{{ url_for('static', filename='Images/recipe2.jpg') }}" alt="recipe2">
         <h3>chiken burger</h3>
-        <button class="see-recipe" data-url="Burger.html">See Recipe</button>
-
-      </div>
+        <button class="see-recipe" data-url="{{ url_for('burger') }}">See Recipe</button>
+    </div>
       <div class="recipe-box">
       <img src="{{ url_for('static', filename='Images/veg.jpg') }}" alt="griled sundwich">
         <h3>Veg grilled sundwich</h3>
-        <button class="see-recipe" data-url="Veg.html">See Recipe</button>
+        <button class="see-recipe" data-url="{{ url_for('veg') }}">See Recipe</button>
       </div>
 
       <div class="recipe-box">
         <img src="{{ url_for('static', filename='Images/spagetti.jpg') }}" alt="spagetti">
         <h3>Spagetti Bolognes</h3>
-        <button class="see-recipe" data-url="Pancake.html">See Recipe</button>
+        <button class="see-recipe" data-url="{{ url_for('spagetti') }}">See Recipe</button>
       </div>
 
       <div class="recipe-box">
         <img src="{{ url_for('static', filename='Images/grilled.jpg') }}" alt="Chiken">
         <h3>Grilled Chicken Salad</h3>
-        <button class="see-recipe" data-url="Chiken_grilled.html">See Recipe</button>
+        <button class="see-recipe" data-url="{{ url_for('chiken') }}">See Recipe</button>
       </div>
 
       <div class="recipe-box">
@@ -89,7 +88,7 @@
     <p>© 2025 CookMate. Happy cooking! All rights reserved.</p>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>
