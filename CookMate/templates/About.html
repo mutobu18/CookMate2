@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>CookMate - Recipes</title>
-  <link rel="stylesheet" href="About.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/About.css') }}">
+  
 </head>
 <body>
 
@@ -15,13 +16,13 @@
       <button class="lang-button">ENG</button>
     </div>
   </div>
-
   <nav class="nav-buttons">
-    <a href="Recipes.html">RECIPES</a> 
-    <a href="MealPlan.html">MEAL PLAN</a> 
-    <a href="About.html">ABOUT</a> 
-  </nav>
+  <a href="{{ url_for('recipes') }}">RECIPES</a> 
+  <a href="{{ url_for('mealplan') }}">MEAL PLAN</a> 
+  <a href="{{ url_for('about') }}">ABOUT</a> 
+</nav>
 </header>
+
 <main class="about-area">
     <h2>About CookMate</h2>
     <p>CookMate is your trusted kitchen companion, helping you discover delicious recipes and plan healthy meals for every day of the week. Our mission is to make cooking easy, fun, and inspiring for everyone.</p>

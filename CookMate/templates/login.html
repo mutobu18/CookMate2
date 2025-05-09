@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CookMate - Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -12,9 +13,11 @@
 
   <main>
     <div class="login-box">
-      <p1>Welcome to CookMate your home cooking assistant!!</p1>
-      <img src="../Images/log.jpg" alt="login image ">
-      <form action="recipes.html" method="get"> 
+      <p>Welcome to CookMate your home cooking assistant!!</p>
+      <img src="{{ url_for('static', filename='Images/log.jpg') }}" alt="Login image">
+    
+      
+        <form action="{{ url_for('login') }}" method="POST">  
         <label for="username">Enter your name or email adress</label>
         <input type="text" id="username" name="username" required>
 
@@ -25,9 +28,12 @@
 
         <div class="links">
           
-          <a href="#">CREATE AN ACCOUNT</a>
+          <a href="{{ url_for('create_account') }}">CREATE AN ACCOUNT</a>
         </div>
       </form>
+      {% if error %}
+        <p style="color: red;">{{ error }}</p>
+      {% endif %}
     </div>
   </main>
 

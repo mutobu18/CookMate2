@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>CookMate - Recipes</title>
-  <link rel="stylesheet" href="Meal.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Meal.css') }}">
+  
 </head>
 <body>
 
@@ -17,10 +18,10 @@
   </div>
 
   <nav class="nav-buttons">
-    <a href="Recipes.html">RECIPES</a>
-    <a href="MealPlan.html">MEAL PLAN</a>
-    <a href="About.html">ABOUT</a>
-  </nav>
+  <a href="{{ url_for('recipes') }}">RECIPES</a> 
+  <a href="{{ url_for('mealplan') }}">MEAL PLAN</a> 
+  <a href="{{ url_for('about') }}">ABOUT</a> 
+</nav>
 </header>
 
 <main class="meal-plan-area">
@@ -30,25 +31,25 @@
     <!-- First row (4 boxes) -->
     <div class="meal-box meal-1">
       <h3>Monday</h3>
-      <img src="../Images/monday.jpg" alt="monday" class="meal-img">
+      <img src="{{ url_for('static', filename='Images/monday.jpg') }}" alt="monday">
       <button class="see-plan">See Plan</button>
     </div>
   
     <div class="meal-box meal-2">
       <h3>Tuesday</h3>
-      <img src="../Images/tuesday.jpg" alt="tuesday" class="meal-img">
+      <img src="{{ url_for('static', filename='Images/tuesday.jpg') }}" alt="tuesday">
       <button class="see-plan">See Plan</button>
     </div>
   
     <div class="meal-box meal-3">
       <h3>Wednesday</h3>
-      <img src="../Images/wednesday.jpg" alt="wednesday" class="meal-img">
+      <img src="{{ url_for('static', filename='Images/wednesday.jpg') }}" alt="wednesday">
       <button class="see-plan">See Plan</button>
     </div>
   
     <div class="meal-box meal-4">
       <h3>Thursday</h3>
-      <img src="../Images/thursday.jpg" alt="thursday" class="meal-img">
+      <img src="{{ url_for('static', filename='Images/Green1.jpg') }}" alt="thursday">
       <button class="see-plan">See Plan</button>
     </div>
   
@@ -56,19 +57,19 @@
     <div class="bottom-row">
       <div class="meal-box meal-5">
         <h3>Friday</h3>
-        <img src="../Images/friday.jpg" alt="friday" class="meal-img">
+        <img src="{{ url_for('static', filename='Images/friday.jpg') }}" alt="tuesday">
         <button class="see-plan">See Plan</button>
       </div>
   
       <div class="meal-box meal-6">
         <h3>Saturday</h3>
-        <img src="../Images/sause.jpg" alt="saturday" class="meal-img">
+        <img src="{{ url_for('static', filename='Images/sause.jpg') }}" alt="Saturday">
         <button class="see-plan">See Plan</button>
       </div>
   
       <div class="meal-box meal-7">
         <h3>Sunday</h3>
-        <img src="../Images/sunday.jpg" alt="sunday" class="meal-img">
+        <img src="{{ url_for('static', filename='Images/Sombe1.jpg') }}" alt="tuesday">
         <button class="see-plan">See Plan</button>
       </div>
     </div>

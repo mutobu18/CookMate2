@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>CookMate - Recipes</title>
-  <link rel="stylesheet" href="Recipes.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Recipes.css') }}">
+  
 </head>
 <body>
 
@@ -17,10 +18,9 @@
   </div>
 
   <nav class="nav-buttons">
-    <a href="Recipes.html">RECIPES</a> 
-    <a href="MealPlan.html">MEAL PLAN</a> 
-    <a href="About.html">ABOUT</a> 
-  </nav>
+  <a href="{{ url_for('recipes') }}">RECIPES</a> 
+  <a href="{{ url_for('mealplan') }}">MEAL PLAN</a> 
+  <a href="{{ url_for('about') }}">ABOUT</a> 
 </header>
 
 <div class="search-bar">
@@ -33,40 +33,50 @@
     
   
     <div class="recipe-box">
-        <img src="../Images/recipe1.jpg" alt="Fresh  Salade ">
+      <img src="{{ url_for('static', filename='Images/recipe1.jpg') }}" alt="recipe2">
         <h3>Fresh Salade</h3>
-        
         <button class="see-recipe" data-url="Freshsalade.html">See Recipe</button>
       </div>
+
       <div class="recipe-box">
-        <img src="../recipe2.jpg" alt="Recipe 2">
+      <img src="{{ url_for('static', filename='Images/recipe2.jpg') }}" alt="recipe2">
         <h3>chiken burger</h3>
         <button class="see-recipe" data-url="Burger.html">See Recipe</button>
+
       </div>
       <div class="recipe-box">
-        <img src="../veg.jpg" alt="Recipe 3">
+      <img src="{{ url_for('static', filename='Images/veg.jpg') }}" alt="griled sundwich">
         <h3>Veg grilled sundwich</h3>
         <button class="see-recipe" data-url="Veg.html">See Recipe</button>
       </div>
+
       <div class="recipe-box">
-        <img src="../Images/spagetti.jpg" alt="spagetti">
+        <img src="{{ url_for('static', filename='Images/spagetti.jpg') }}" alt="spagetti">
         <h3>Spagetti Bolognes</h3>
         <button class="see-recipe" data-url="Pancake.html">See Recipe</button>
       </div>
+
       <div class="recipe-box">
-        <img src="../Images/grilled.jpg" alt="spagetti">
+        <img src="{{ url_for('static', filename='Images/grilled.jpg') }}" alt="Chiken">
         <h3>Grilled Chicken Salad</h3>
         <button class="see-recipe" data-url="Chiken_grilled.html">See Recipe</button>
       </div>
+
       <div class="recipe-box">
-        <img src="../Images/cookies.jpg" alt="spagetti">
+        <img src="{{ url_for('static', filename='Images/Cookies.jpg') }}" alt="Cookies">
         <h3>Chocolate chips cookies</h3>
         <button class="see-recipe" data-url="Cookies.html">See Recipe</button>
       </div>
 
       <div class="recipe-box">
-        <img src="../Images/Pancake.jpg" alt="spagetti">
-        <h3>Simple Pancakes</h3>
+      <img src="{{ url_for('static', filename='Images/Warm_soup.jpg') }}" alt="Soup">
+      <h3>Warm Veggie Soup</h3>
+      <button class="see-recipe" data-url="Cookies.html">See Recipe</button>
+      </div>
+
+      <div class="recipe-box">
+        <img src="{{ url_for('static', filename='Images/Pancake.jpg') }}" alt="Pancake">
+         <h3>Simple Pancakes</h3>
         <button class="see-recipe" data-url="Cookies.html">See Recipe</button>
       </div>
 

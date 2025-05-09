@@ -126,6 +126,7 @@ body {
     height: 120px;
     object-fit: cover;
     border-radius: 5px;
+    border-radius:10px;
   }
   
   /* See plan button */
